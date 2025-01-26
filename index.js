@@ -82,13 +82,13 @@ function validateBook(book) {
   return Joi.object(schema).validate(book);
 }
 
-// app.get('/api/articles/:year/:month',(req,res) =>{
-//     res.send(req.params)
-// })
+app.get('/api/articles/:year/:month',(req,res) =>{
+    res.send(req.params)
+})
 
-// app.get('/api/articles/:year/:month',(req,res) =>{
-//     res.send(req.query)
-// })
+app.get('/api/articles/:year/:month',(req,res) =>{
+    res.send(req.query)
+})
 
 const Port = process.env.Port || 5000;
 app.listen(Port, () => {
