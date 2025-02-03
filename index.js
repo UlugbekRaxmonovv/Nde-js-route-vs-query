@@ -5,7 +5,7 @@ const logger = require('./logger')
 const authorization = require('./authorization')
 // const helmet = require('helmet')
 // const morgan = require('morgan')
-// app.use(morgan('tiny'))   -> yordamida log yozish amalga oshiriladi yani dasturimiga kelgan barcha htt surovlarini  log qiladi 
+// app.use(morgan('tiny'))   -> yordamida log yozish amalga oshiriladi yani dasturimiga kelgan barcha http surovlarini  log qiladi 
 // app.use(helmet())  ->  https responsga xavsizlikga oid bulgan hederlarni quyib berib dasturimizni xavfsizligin taminlab beradi 
 app.use(express.json());   ///->  request bodysini json formatga o'girib beradi   va http://localhost:5000/readme.txt   shu ko'rinishda faylni yozamiz brouzerga
 app.use(express.static('public')) /// -> static kontentni ham hoisting qilishimiz mumkin 
