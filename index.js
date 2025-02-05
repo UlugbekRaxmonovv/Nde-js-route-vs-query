@@ -30,6 +30,8 @@ app.use(express.static('public')) /// -> static kontentni ham hoisting qilishimi
 
 app.use(logger)
 app.use(authorization )
+// app.set('view engine', 'pug')
+// app.set('views', '/views')
 
 const books = [
   {
@@ -48,6 +50,7 @@ const books = [
 
 app.get("/", (req, res) => {
   res.send("Salom js");
+  // res.render('index', {title: 'my express app',  greeting:"Assalomu alaykum"} )
 });
 app.get("/api/books", (req, res) => {
   res.send(books);
