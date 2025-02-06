@@ -30,8 +30,8 @@ app.use(express.static('public')) /// -> static kontentni ham hoisting qilishimi
 
 app.use(logger)
 app.use(authorization )
-// app.set('view engine', 'pug')
-// app.set('views', '/views')
+// app.set('view engine', 'pug')  ///view -> bilan ishlash
+// app.set('views', '/views')   
 
 const books = [
   {
